@@ -41,7 +41,7 @@ function suma (x, y) {
 function resta (x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x;
+  return x - y;
 }
 
 function multiplica (x, y) {
@@ -55,6 +55,8 @@ function divide (x, y) {
   // Tu código:
   return x / y;
 }
+
+
 
 function sonIguales (x, y) {
   // Devuelve "true" si "x" e "y" son iguales
@@ -130,7 +132,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow (num * num * num);
+  return num * num * num;
 }
 
 function elevar(num, exponent) {
@@ -163,15 +165,15 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero === 0) {
-    return false
-  } else if (
-    numero > 0) {
-  return "es positivo";
-  } else {
-    return "es negativo";
+    return false;
+  }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
   }
 }
-
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
@@ -191,7 +193,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola ' + nombre + '!';
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -233,9 +235,9 @@ function esVocal(letra) {
     return 'Dato incorrecto' 
   }
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "es vocal"
+    return "Es vocal"
   }
-    "Dato incorrecto"
+    return "Dato incorrecto"
 
   }
 
